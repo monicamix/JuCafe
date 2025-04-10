@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #8b2d1f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero-text p {
+    color: #d1007f;
+    margin: 10px 0;
+}
+
+button, .btn-claro {
+    padding: 10px 15px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.btn-claro {
+    background-color: #fff;
+    border: 1px solid #8b2d1f;
+    color: #8b2d1f;
+}
+
+.beneficios {
+    background-color: #fff6dc;
+    padding: 40px 20px;
+}
+
+.beneficios h2 {
+    color: #8b2d1f;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.depoimentos {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.depoimentos img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.modelo {
+    background: #fefefe;
+    padding: 40px 20px;
+}
+
+.modelo h2 {
+    color: #8b2d1f;
+    margin-bottom: 20px;
+}
+
+.modelos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.modelo-card {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #8b2d1f;
+    border-radius: 10px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #8b2d1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+    margin: 0 5px;
+}
