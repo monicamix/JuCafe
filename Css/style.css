@@ -1,0 +1,314 @@
+
+
+/* ======================
+  HEADER
+ ====================== */
+.header {
+  background-color: #84291f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo img {
+  height: 50px; /* Ajuste a altura do logo conforme necessário */
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  margin: 0;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #f4c47d;
+}
+
+/* ======================
+  GERAL
+ ====================== */
+ body {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+/* ======================
+  HERO
+ ====================== */
+.hero {
+  background-image: url('bg-hero.jpg'); /* Substitua pelo caminho da imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.hero__title {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  color: #f4c47d;
+  margin-bottom: 25px;
+}
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button {
+  padding: 12px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button--dark {
+  background-color: #fff;
+  color: #333;
+}
+
+.button--dark:hover {
+  background-color: #eee;
+}
+
+.button--primary {
+  background-color: #f4c47d;
+  color: #84291f;
+}
+
+.button--primary:hover {
+  background-color: #e8b871;
+}
+
+/* ======================
+  BENEFITS
+ ====================== */
+.benefits {
+  background-color: #fff4d6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefits__title {
+  color: #84291f;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.benefits__cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefits__card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefits__card:hover {
+  transform: translateY(-5px);
+}
+
+.benefits__card img {
+  height: 80px; /* Ajuste a altura dos ícones */
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.benefits__card-title {
+  color: #84291f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefits__card-text {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ======================
+  TESTIMONIALS
+ ====================== */
+.testimonials {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials__title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #f4c47d;
+}
+
+.testimonials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonials__quote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.testimonials__author-info {
+  font-weight: bold;
+  color: #f4c47d;
+  margin-bottom: 10px;
+}
+
+.testimonials__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+/* ======================
+  MODELS
+ ====================== */
+.models {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.models__title {
+  font-size: 28px;
+  color: #84291f;
+  margin-bottom: 30px;
+}
+
+.models__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.models__card {
+  background-color: #fff;
+  border: 3px solid #84291f;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.models__card img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-bottom: 20px;
+  height: auto; /* Garante que a altura se ajuste proporcionalmente */
+  object-fit: cover; /* Para cobrir o espaço sem distorção */
+}
+
+.models__card-title {
+  font-size: 22px;
+  color: #fff;
+  background-color: #84291f;
+  padding: 15px;
+  margin-top: -5px; /* Sobreposição sutil na imagem */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.models__card-list {
+  list-style: none;
+  padding: 20px;
+  text-align: left;
+}
+
+.models__card-item {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* ======================
+  FOOTER
+ ====================== */
+.footer {
+  background-color: #3a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer__text,
+.footer__contact,
+.footer__credit {
+  margin-bottom: 15px;
+}
+
+.footer__social {
+  margin-bottom: 15px;
+}
+
+.footer__social a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer__social a:hover {
+  color: #f4c47d;
+}
