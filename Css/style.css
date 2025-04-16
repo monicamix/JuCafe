@@ -1,38 +1,55 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Jockey+One&family=Just+Me+Again+Down+Here&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ======================
   HEADER
  ====================== */
 .header {
-  background-color: #84291f;
-  padding: 20px;
+  background-color: #982417;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 16px; 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  
 }
 
+/* POSIÇÃO DO LOGO XÍCARA */
+.header__logo {
+  display: flex;
+  align-items:center;
+  gap: 8px; /* Espaço entre o logo e título do site */
+  margin-bottom: 10px;
+}
+
+/* TAMANHO DO LOGO */
 .header__logo img {
-  height: 50px; /* Ajuste a altura do logo conforme necessário */
+  height: 35px;
 }
 
+.header__title {
+  font-family: 'Just Me Again Down Here';
+  font-size: 30px;
+  color: #f8e2c9;
+  margin: 0;
+}
+
+.header__title--bege {
+  color: #c89b67; 
+}
+
+/* MENU DE NAVEGAÇÃO*/
 .nav__list {
   display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav__item {
-  margin: 0;
+  gap: 30px;
 }
 
 .nav__link {
-  color: #fff;
+  color: #fff4e3;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-size: 20px;
+  font-family: 'Just Me Again Down Here',sans-serif;
 }
 
 .nav__link:hover {
@@ -69,7 +86,7 @@
 }
 
 .hero__content {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(28, 26, 26, 0.934);
   padding: 40px;
   border-radius: 10px;
   display: inline-block;
