@@ -1,39 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Jockey+One&family=Just+Me+Again+Down+Here&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ======================
-  HEADER
- ====================== */
+/* HEADER */
 .header {
   background-color: #982417;
-  margin-top: 8px;
-  margin-right: 16px;
-  margin-left: 16px; 
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-/* POSIÇÃO DO LOGO XÍCARA */
+/* Posição do logo*/
 .header__logo {
   display: flex;
   align-items:center;
-  gap: 8px; /* Espaço entre o logo e título do site */
+  gap: 8px; 
   margin-bottom: 10px;
 }
 
-/* TAMANHO DO LOGO */
+/* Tamanho do logo */
 .header__logo img {
   height: 35px;
 }
 
+/* Título do Site -  Ju*/
 .header__title {
   font-family: 'Just Me Again Down Here';
-  font-size: 30px;
+  font-size: 45px;
   color: #f8e2c9;
   margin: 0;
 }
 
+/* Título do Site - Cafe */
 .header__title--bege {
   color: #c89b67; 
 }
@@ -56,9 +55,7 @@
   color: #f4c47d;
 }
 
-/* ======================
-  GERAL
- ====================== */
+/* GERAL - CORPO DA PÁGINA */
  body {
     font-family: sans-serif;
     color: #333;
@@ -73,37 +70,43 @@
     display: block;
   }
 
-/* ======================
-  HERO
- ====================== */
-.hero {
-  background-image: url('bg-hero.jpg'); /* Substitua pelo caminho da imagem de fundo */
-  background-size: cover;
+  
+
+/* BANNER e FORMULARIO FRANQUEADO */
+ .banner {
+  background-image: url('../img/novoBanner.png'); 
+  background-size: cover;/*cobrir toda a área do elemento*/
   background-position: center;
-  padding: 80px 20px;
-  text-align: center;
-  color: #fff;
+  background-repeat: no-repeat;
+  padding: 100px 20px;
+  text-align: right;
+  color: #000000;/*Cor do texto Seja Franqueado*/
+  position: relative;
 }
 
-.hero__content {
-  background-color: rgba(28, 26, 26, 0.934);
+.banner__content {
+  background-color: #FFFFFF;
   padding: 40px;
-  border-radius: 10px;
   display: inline-block;
 }
 
-.hero__title {
+.banner__title {
   font-size: 32px;
   margin-bottom: 15px;
 }
 
-.hero__subtitle {
+.banner__subtitle {
   font-size: 18px;
-  color: #f4c47d;
+  color: #000000;
   margin-bottom: 25px;
 }
 
-.hero__buttons {
+.banner__subtitle--vermelho{
+  color:#982417 ;
+}
+
+
+.banner__buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -113,46 +116,56 @@
   padding: 12px 25px;
   font-weight: bold;
   font-size: 16px;
-  border: none;
+  border:#fff4e3;
   border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.button--dark {
-  background-color: #fff;
-  color: #333;
+.button--saiba {
+  background-color: #ffffff;
 }
 
-.button--dark:hover {
-  background-color: #eee;
-}
-
-.button--primary {
+.button--saiba:hover {
   background-color: #f4c47d;
-  color: #84291f;
 }
 
-.button--primary:hover {
+.button--registrar {
+  background-color: #ffffff;
+}
+
+.button--registrar:hover {
   background-color: #e8b871;
 }
 
-/* ======================
-  BENEFITS
- ====================== */
-.benefits {
-  background-color: #fff4d6;
+/* FORMULÁRIO DE FRANQUEADO - BENEFÍCIOS */
+.beneficios {
+  background-color: #fff0D1;
   padding: 60px 20px;
-  text-align: center;
+  text-align:left
 }
 
-.benefits__title {
+.beneficios__title {
+  position: relative;
+  padding-left: 20px; /* espaço para a barrinha */
   color: #84291f;
   font-size: 28px;
   margin-bottom: 30px;
+  font-weight: bold;
+  text-align: left;
 }
 
-.benefits__cards {
+/* Barra vertical do texto Benefícios */
+.beneficios__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10px;                
+  height: 100%;             
+  background-color: #84291f; 
+}
+
+.beneficios__cards {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -161,7 +174,7 @@
   margin: 0 auto;
 }
 
-.benefits__card {
+.beneficios__card {
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
@@ -170,23 +183,19 @@
   transition: transform 0.3s ease;
 }
 
-.benefits__card:hover {
-  transform: translateY(-5px);
-}
-
-.benefits__card img {
+.beneficios__card img {
   height: 80px; /* Ajuste a altura dos ícones */
   margin-bottom: 15px;
   object-fit: contain;
 }
 
-.benefits__card-title {
+.beneficios__card-title {
   color: #84291f;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.benefits__card-text {
+.beneficios__card-text {
   font-size: 16px;
   color: #555;
 }
@@ -298,6 +307,7 @@
   font-size: 16px;
   color: #555;
 }
+
 
 /* ======================
   FOOTER
