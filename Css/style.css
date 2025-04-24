@@ -75,12 +75,12 @@
 /* BANNER e FORMULARIO FRANQUEADO */
  .banner {
   background-image: url('../img/novoBanner.png'); 
-  background-size: cover;/*cobrir toda a área do elemento*/
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 100px 20px;
   text-align: right;
-  color: #000000;/*Cor do texto Seja Franqueado*/
+  color: #000000;
   position: relative;
 }
 
@@ -137,7 +137,7 @@
   background-color: #e8b871;
 }
 
-/* FORMULÁRIO DE FRANQUEADO - BENEFÍCIOS */
+/* BENEFÍCIOS */
 .beneficios {
   background-color: #fff0D1;
   padding: 60px 20px;
@@ -175,17 +175,24 @@
 }
 
 .beneficios__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* tudo alinhado à esquerda */
+  text-align: left;
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
   width: 300px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
 
 .beneficios__card img {
-  height: 80px; /* Ajuste a altura dos ícones */
+  height: 80px; 
   margin-bottom: 15px;
+  object-fit: contain;
+  align-self: center; /* centraliza só a imagem */
+  margin-bottom: 15px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -200,23 +207,21 @@
   color: #555;
 }
 
-/* ======================
-  TESTIMONIALS
- ====================== */
-.testimonials {
+/*DEPOIMENTOS*/
+.depoimentos {
   background-color: #000;
   color: #fff;
   padding: 60px 20px;
   text-align: center;
 }
 
-.testimonials__title {
+.depoimentos__title {
   font-size: 28px;
   margin-bottom: 40px;
   color: #f4c47d;
 }
 
-.testimonials__container {
+.depoimentos__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,43 +229,40 @@
   margin: 0 auto;
 }
 
-.testimonials__quote {
+.depoimentos__quote {
   font-style: italic;
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 20px;
 }
 
-.testimonials__author-info {
+.depoimentos__author-info {
   font-weight: bold;
   color: #f4c47d;
   margin-bottom: 10px;
 }
 
-.testimonials__image {
+.depoimentos__image {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
   object-fit: cover;
   margin-top: 30px;
 }
 
-/* ======================
-  MODELS
- ====================== */
-.models {
+/* MODELOS DE NEGÓCIO */
+.modelos {
   background-color: #fff;
   padding: 60px 20px;
   text-align: center;
 }
 
-.models__title {
+.modelos__title {
   font-size: 28px;
   color: #84291f;
   margin-bottom: 30px;
 }
 
-.models__list {
+.modelos__list {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -269,7 +271,7 @@
   margin: 0 auto;
 }
 
-.models__card {
+.modelos__card {
   background-color: #fff;
   border: 3px solid #84291f;
   border-radius: 15px;
@@ -277,43 +279,41 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.models__card img {
+.modelos__card img {
   width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   margin-bottom: 20px;
-  height: auto; /* Garante que a altura se ajuste proporcionalmente */
-  object-fit: cover; /* Para cobrir o espaço sem distorção */
+  height: auto; 
+  object-fit: cover; 
 }
 
-.models__card-title {
+.modelos__card-title {
   font-size: 22px;
   color: #fff;
   background-color: #84291f;
   padding: 15px;
-  margin-top: -5px; /* Sobreposição sutil na imagem */
+  margin-top: -5px; 
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.models__card-list {
+.modelos__card-list {
   list-style: none;
   padding: 20px;
   text-align: left;
 }
 
-.models__card-item {
+.modelos__card-item {
   margin-bottom: 12px;
   font-size: 16px;
   color: #555;
 }
 
 
-/* ======================
-  FOOTER
- ====================== */
+/* FOOTER RODAPÉ */
 .footer {
-  background-color: #3a1a1a;
+  background-color: #84291f;
   color: #fff;
   text-align: center;
   padding: 40px 20px;
